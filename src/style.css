@@ -1,0 +1,57 @@
+body {
+    background-color: #424242;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+}
+
+.movieListTitle, .movie_title {
+    color: #ffffff;
+}
+
+.movie_item {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.movie_item:nth-of-type(n+5) { 
+    display: none; 
+}
+
+.movie_poster {
+    width: 310px;
+    border-radius: 2%;
+}
+
+.movie_poster:hover {
+    opacity: 0.2;
+}
+
+.movie_rate, .movie_rank {
+    display: inline;
+    background-color: cornflowerblue;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+.movie_rank {
+    background-color: lightblue;
+    color: black;
+}
+
+.movie_plot {
+    position: absolute;
+    color: white;
+    left: 0;
+    top: 45%;
+    padding: 10px;
+    display: none;
+}
