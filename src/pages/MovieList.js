@@ -50,18 +50,18 @@ export default class extends React.Component {
 
 const MovieItem = ({ id, plot, title, posterUrl, advanceRate, advanceRateRank }) => {
 
-  function handle_plot(e) {
+  function view_plot(e) {
     e.target.parentNode.children[1].style.display = 'block';
   }
 
-  function handle_plot2(e) {
+  function hidden_plot(e) {
     e.target.parentNode.children[1].style.display = 'none';
   }
 
   return (
 	<div className="movie_item">
     <a href={`http://localhost:3000/movie/detail/${id}`}>
-      <img onMouseEnter={handle_plot} onMouseLeave={handle_plot2} className="movie_poster" src={posterUrl} />
+      <img onMouseEnter={view_plot} onMouseLeave={hidden_plot} className="movie_poster" src={posterUrl} />
       <span className="movie_plot">{plot}</span>
       <h3 className="movie_title">{title}</h3>
       <div className="movie_rate">예매율: {advanceRate}</div>
