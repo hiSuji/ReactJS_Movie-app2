@@ -9,6 +9,7 @@
     "acorn": "8.0.1",
     "lodash": "^4.17.19",
     "minimist": "1.2.5",
+    "node-forge": "^0.10.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
